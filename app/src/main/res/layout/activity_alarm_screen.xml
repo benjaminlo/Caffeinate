@@ -1,0 +1,49 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent" android:background="#ff000000"
+    tools:context=".AlarmScreenActivity">
+
+    <!-- The primary full-screen view. This can be replaced with whatever view
+         is needed to present your content, e.g. VideoView, SurfaceView,
+         TextureView, etc. -->
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="#ff9b9b9b"
+        android:textStyle="normal"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/alarm_screen_alert1"
+        android:layout_gravity="center_horizontal|top"
+        android:layout_marginTop="240dp" />
+
+    <TextView
+        android:id="@+id/fullscreen_content"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:keepScreenOn="true"
+        android:textColor="#ff9b9b9b"
+        android:textStyle="normal"
+        android:textSize="50sp"
+        android:gravity="center"
+        android:text="@string/alarm_screen_alert2"
+        android:layout_gravity="top|center_horizontal"
+        android:layout_marginTop="300dp" />
+
+    <DigitalClock
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/digitalClock"
+        android:layout_gravity="center_horizontal|bottom"
+        android:textColor="#ff9b9b9b"
+        android:textSize="50sp"
+        android:typeface="normal"
+        android:layout_marginBottom="25dp" />
+
+    <!-- This FrameLayout insets its children based on system windows using
+         android:fitsSystemWindows. -->
+
+</FrameLayout>

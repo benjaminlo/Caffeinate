@@ -6,5 +6,6 @@
     <string name="action_settings">Settings</string>
     <string name="time_picker_button">CREATE ALARM</string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
-
+    <string name="alarm_screen_alert1">GET TO AN</string>
+    <string name="alarm_screen_alert2">NFC TAG!</string>
 </resources>
