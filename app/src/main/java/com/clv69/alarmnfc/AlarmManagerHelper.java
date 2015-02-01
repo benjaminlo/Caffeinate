@@ -47,5 +47,8 @@ public class AlarmManagerHelper extends BroadcastReceiver {
 
         wakeLock.release();
 
+        Intent scheduledIntent = new Intent(context, AlarmScreenActivity.class);
+        scheduledIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
+        context.startActivity(scheduledIntent);
     }
 }
