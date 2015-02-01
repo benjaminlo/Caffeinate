@@ -45,10 +45,10 @@ public class AlarmManagerHelper extends BroadcastReceiver {
         Vibrator vibrator = (Vibrator) context.getSystemService(Context.VIBRATOR_SERVICE);
         vibrator.vibrate(pattern, 0);
 
-        wakeLock.release();
-
         Intent scheduledIntent = new Intent(context, AlarmScreenActivity.class);
         scheduledIntent.addFlags(Intent.FLAG_ACTIVITY_NEW_TASK);
         context.startActivity(scheduledIntent);
+
+        wakeLock.release();
     }
 }
